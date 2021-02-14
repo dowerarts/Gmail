@@ -50,10 +50,7 @@ var request = require('request');
    
    if (json.result === 1) {
          console.log('[+] Key Not Register');
-   } else if (json.result === 0) {
-      console.log('[+] Key Register');
-
-      if (json.licenseKey.block === true) {
+   } else if (json.licenseKey.block === true) {
          console.log('[+] Key Not Activated (Blocked)');
       } else if (json.licenseKey.block === false) {
          console.log('[+] Key Activated');
@@ -248,7 +245,6 @@ var request = require('request');
       no++;
    }
       }
-   }
 });
 })();
 
