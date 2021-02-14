@@ -38,7 +38,12 @@ var request = require('request');
    );
    console.log('                                                              By Apriamsyah')
    console.log('\n')
-   var _0x3ea9=['[+]\x20License\x20Key\x20:\x20','51097CIcqcT','8dKNkpc','322618ZxEFYz','question','336751KBVbDU','https://app.cryptolens.io/api/key/GetKey?token=WyI0NzU1MDYiLCJzODJ1Z3FVQTI4TXU1MEU4aXlOVjUyUmRDcjBtTjZ3TTJIL2RWZklTIl0=&ProductId=9757&Key=','20422ryTdPJ','152609hbDLCY','13dUaLoZ','67349XuYTVc','363130FlnFjT','1YGnldQ','2NOEvai'];var _0x3291=function(_0xc04a54,_0x3d5599){_0xc04a54=_0xc04a54-0xf1;var _0x3ea994=_0x3ea9[_0xc04a54];return _0x3ea994;};var _0x23c95c=_0x3291;(function(_0x3614e1,_0x23baa6){var _0x3f9ff3=_0x3291;while(!![]){try{var _0x201e43=parseInt(_0x3f9ff3(0xfb))*parseInt(_0x3f9ff3(0xf2))+-parseInt(_0x3f9ff3(0xfa))+-parseInt(_0x3f9ff3(0xf9))*-parseInt(_0x3f9ff3(0xfc))+-parseInt(_0x3f9ff3(0xfe))*-parseInt(_0x3f9ff3(0xf1))+-parseInt(_0x3f9ff3(0xf7))+-parseInt(_0x3f9ff3(0xf4))+-parseInt(_0x3f9ff3(0xf6))*-parseInt(_0x3f9ff3(0xf8));if(_0x201e43===_0x23baa6)break;else _0x3614e1['push'](_0x3614e1['shift']());}catch(_0x1f028c){_0x3614e1['push'](_0x3614e1['shift']());}}}(_0x3ea9,0x44230));var key=readlineSync[_0x23c95c(0xf3)](_0x23c95c(0xfd));fetch(_0x23c95c(0xf5)+key+'',{'method':'GET'});
+   var key = readlineSync.question('[+] License Key : ');
+
+   fetch('https://app.cryptolens.io/api/key/GetKey?token=WyI0NzU1MDYiLCJzODJ1Z3FVQTI4TXU1MEU4aXlOVjUyUmRDcjBtTjZ3TTJIL2RWZklTIl0=&ProductId=9757&Key='+key+'', {
+      method: 'GET',
+      
+  })
 
    .then(res => res.json()) // expecting a json response
    .then(async (json) => {
